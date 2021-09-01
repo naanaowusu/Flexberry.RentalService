@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rental-service-bikes-e",
+  "editForm": "i-i-s-rental-service-bikes-e",
+  "external": false,
+  "caption": "Bikes",
+  "name": "IISRental_serviceBikesL",
+  "className": "BikesL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-bikes",
+      "modelProjection": "BikesL"
+    }
+  ]
+}

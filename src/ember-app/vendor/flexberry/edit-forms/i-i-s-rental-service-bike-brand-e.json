@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Bike brand",
+  "name": "IISRental_serviceBikeBrandE",
+  "className": "BikeBrandE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-bike-brand",
+      "modelProjection": "BikeBrandE"
+    }
+  ]
+}

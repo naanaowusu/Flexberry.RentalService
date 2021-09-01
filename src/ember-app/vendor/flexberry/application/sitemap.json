@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Rental_service",
+  "applicationTitle": "Rental_service",
+  "items": [
+    {
+      "link": null,
+      "menuName": "rental-service",
+      "caption": "Rental_service",
+      "title": "Rental_service",
+      "children": [
+        {
+          "link": "i-i-s-rental-service-bikes-l",
+          "menuName": null,
+          "caption": "Bikes",
+          "title": "There are 100 bikes in stock",
+          "children": null
+        },
+        {
+          "link": "i-i-s-rental-service-bike-brand-l",
+          "menuName": null,
+          "caption": "Bike brand",
+          "title": "We have several bicycle brands that you can select. ",
+          "children": null
+        },
+        {
+          "link": "i-i-s-rental-service-rent-point-l",
+          "menuName": null,
+          "caption": "Rent point",
+          "title": "You can order a bike at any of our rental points and return to the nearest and return at any which is comfortable for you.",
+          "children": null
+        },
+        {
+          "link": "i-i-s-rental-service-rent-l",
+          "menuName": null,
+          "caption": "Rent",
+          "title": "Order and pay by cash or by card",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

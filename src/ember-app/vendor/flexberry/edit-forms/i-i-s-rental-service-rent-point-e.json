@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Rent point",
+  "name": "IISRental_serviceRentPointE",
+  "className": "RentPointE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-rent-point",
+      "modelProjection": "RentPointE"
+    }
+  ]
+}

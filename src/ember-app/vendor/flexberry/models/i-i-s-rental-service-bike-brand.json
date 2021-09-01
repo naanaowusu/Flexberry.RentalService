@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISRental_serviceBikeBrand",
+  "modelName": "i-i-s-rental-service-bike-brand",
+  "className": "BikeBrand",
+  "nameSpace": "IIS.Rental_service",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BikeBrandE",
+      "modelName": "i-i-s-rental-service-bike-brand",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "BikeBrandL",
+      "modelName": "i-i-s-rental-service-bike-brand",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

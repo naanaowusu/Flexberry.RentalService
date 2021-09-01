@@ -1,0 +1,57 @@
+<h3 class="ui header">{{t "forms.i-i-s-rental-service-bikes-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.i-i-s-rental-service-bikes-e.name-caption")
+      data-test-i-i-s-rental-service-bikes-e-name=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-rental-service-bikes-e.brands-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.brands
+      class=(if (v-get validationObject "brands" "isInvalid") "error")
+      displayAttributeName="name"
+      autocomplete=true
+      relationName="brands"
+      projection="BikeBrandL"
+      title=(t "forms.i-i-s-rental-service-bikes-e.brands-caption")
+      readonly=readonly
+      componentName="brandsLookup"
+      class=(if (v-get validationObject "brands" "isInvalid") "error")
+      data-test-i-i-s-rental-service-bikes-e-brands=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "brands" "message")}}
+  </div>
+
+</form>

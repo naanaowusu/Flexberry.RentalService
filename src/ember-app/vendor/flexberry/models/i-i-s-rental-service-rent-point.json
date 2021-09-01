@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISRental_serviceRentPoint",
+  "modelName": "i-i-s-rental-service-rent-point",
+  "className": "RentPoint",
+  "nameSpace": "IIS.Rental_service",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "address",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "RentPointE",
+      "modelName": "i-i-s-rental-service-rent-point",
+      "attrs": [
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "RentPointL",
+      "modelName": "i-i-s-rental-service-rent-point",
+      "attrs": [
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

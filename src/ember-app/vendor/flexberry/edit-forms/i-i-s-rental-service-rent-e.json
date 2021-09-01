@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "GetAt",
+      "projection": "RentPointL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "LeftAt",
+      "projection": "RentPointL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "RentBike",
+      "projection": "BikesL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Rent",
+  "name": "IISRental_serviceRentE",
+  "className": "RentE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-rent",
+      "modelProjection": "RentE"
+    }
+  ]
+}

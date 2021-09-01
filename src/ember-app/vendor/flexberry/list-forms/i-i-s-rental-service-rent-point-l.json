@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rental-service-rent-point-e",
+  "editForm": "i-i-s-rental-service-rent-point-e",
+  "external": false,
+  "caption": "Rent point",
+  "name": "IISRental_serviceRentPointL",
+  "className": "RentPointL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-rent-point",
+      "modelProjection": "RentPointL"
+    }
+  ]
+}

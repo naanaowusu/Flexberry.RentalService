@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rental-service-bike-brand-e",
+  "editForm": "i-i-s-rental-service-bike-brand-e",
+  "external": false,
+  "caption": "Bike brand",
+  "name": "IISRental_serviceBikeBrandL",
+  "className": "BikeBrandL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-bike-brand",
+      "modelProjection": "BikeBrandL"
+    }
+  ]
+}

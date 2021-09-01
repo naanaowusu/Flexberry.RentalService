@@ -1,0 +1,1 @@
+docker-compose -p rental_service down

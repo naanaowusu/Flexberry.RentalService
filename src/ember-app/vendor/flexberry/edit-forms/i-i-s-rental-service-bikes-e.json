@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Brands",
+      "projection": "BikeBrandL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Bikes",
+  "name": "IISRental_serviceBikesE",
+  "className": "BikesE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rental-service-bikes",
+      "modelProjection": "BikesE"
+    }
+  ]
+}

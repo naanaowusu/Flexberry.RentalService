@@ -1,0 +1,135 @@
+<h3 class="ui header">{{t "forms.i-i-s-rental-service-rent-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-rental-service-rent-e.startRent-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.startRent
+      class=(if (v-get validationObject "startRent" "isInvalid") "error")
+      data-test-i-i-s-rental-service-rent-e-startRent=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "startRent" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-rental-service-rent-e.endRent-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.endRent
+      class=(if (v-get validationObject "endRent" "isInvalid") "error")
+      data-test-i-i-s-rental-service-rent-e-endRent=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "endRent" "message")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.duration
+      class=(if (v-get validationObject "duration" "isInvalid") "error")
+      label=(t "forms.i-i-s-rental-service-rent-e.duration-caption")
+      data-test-i-i-s-rental-service-rent-e-duration=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "duration" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.cost
+      class=(if (v-get validationObject "cost" "isInvalid") "error")
+      label=(t "forms.i-i-s-rental-service-rent-e.cost-caption")
+      data-test-i-i-s-rental-service-rent-e-cost=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "cost" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-rental-service-rent-e.getAt-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.getAt
+      class=(if (v-get validationObject "getAt" "isInvalid") "error")
+      displayAttributeName="address"
+      autocomplete=true
+      relationName="getAt"
+      projection="RentPointL"
+      title=(t "forms.i-i-s-rental-service-rent-e.getAt-caption")
+      readonly=readonly
+      componentName="getAtLookup"
+      class=(if (v-get validationObject "getAt" "isInvalid") "error")
+      data-test-i-i-s-rental-service-rent-e-getAt=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "getAt" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-rental-service-rent-e.leftAt-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.leftAt
+      class=(if (v-get validationObject "leftAt" "isInvalid") "error")
+      displayAttributeName="address"
+      autocomplete=true
+      relationName="leftAt"
+      projection="RentPointL"
+      title=(t "forms.i-i-s-rental-service-rent-e.leftAt-caption")
+      readonly=readonly
+      componentName="leftAtLookup"
+      class=(if (v-get validationObject "leftAt" "isInvalid") "error")
+      data-test-i-i-s-rental-service-rent-e-leftAt=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "leftAt" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-rental-service-rent-e.rentBike-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.rentBike
+      class=(if (v-get validationObject "rentBike" "isInvalid") "error")
+      displayAttributeName="name"
+      autocomplete=true
+      relationName="rentBike"
+      projection="BikesL"
+      title=(t "forms.i-i-s-rental-service-rent-e.rentBike-caption")
+      readonly=readonly
+      componentName="rentBikeLookup"
+      class=(if (v-get validationObject "rentBike" "isInvalid") "error")
+      data-test-i-i-s-rental-service-rent-e-rentBike=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "rentBike" "message")}}
+  </div>
+
+</form>
