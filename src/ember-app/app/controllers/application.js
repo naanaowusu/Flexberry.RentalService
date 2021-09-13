@@ -28,25 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-rental-service-bikes-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-bikes-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-bikes-l.title'),
-            icon: 'phone',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-rental-service-bike-brand-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-bike-brand-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-bike-brand-l.title'),
-            icon: 'paperclip',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-rental-service-rent-point-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-point-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-point-l.title'),
-            icon: 'chart bar',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-rental-service-rent-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-l.title'),
-            icon: 'tasks',
+            icon: 'chart bar',
             children: null
           }]
         }
