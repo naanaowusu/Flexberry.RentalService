@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-rental-service-bike-brand-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-bike-brand-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-bike-brand-l.title'),
-            icon: 'address card',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-rental-service-rent-point-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-point-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-point-l.title'),
-            icon: 'phone',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-rental-service-rent-l',
             caption: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-l.caption'),
             title: i18n.t('forms.application.sitemap.rental-service.i-i-s-rental-service-rent-l.title'),
-            icon: 'chart bar',
+            icon: 'folder',
             children: null
           }]
         }
